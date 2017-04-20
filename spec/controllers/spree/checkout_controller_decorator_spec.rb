@@ -86,11 +86,13 @@ describe Spree::CheckoutController do
     end
 
     before do
-      allow(order).to receive(:update_from_params).and_return(true)
+      allow(order).to receive(:assign_attributes).and_return(order)
+      allow(order).to receive(:save).and_return(true)
       allow(order).to receive(:temporary_address=).and_return(true)
       allow(order).to receive(:state=).and_return("complete")
       allow(order).to receive(:next).and_return(true)
       allow(order).to receive(:completed?).and_return(true)
+      allow(order).to receive(:shipments).and_return([])
       request.env['HTTP_REFERER'] = 'test/confirm'
     end
 
@@ -107,7 +109,6 @@ describe Spree::CheckoutController do
       it { expect(controller).to receive(:setup_for_current_state).and_return(true) }
       it { expect(controller).to receive(:spree_current_user).and_return(user) }
       it { expect(order).to receive(:can_go_to_state?).and_return(false) }
-      it { expect(order).to receive(:update_from_params).and_return(true) }
       it { expect(order).to receive(:temporary_address=).and_return(true) }
       it { expect(order).to receive(:state=).and_return("complete") }
       it { expect(order).to receive(:next).and_return(true) }

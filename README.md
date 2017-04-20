@@ -1,17 +1,17 @@
-SpreeEventsTracker
+Solidus Events Tracker
 ==================
 
-Introduction goes here.
+Solidus Port for Spree Events Tracker.
+
+Tracks user activity and events on the server side. Use Solidus Admin Insights to build reports of user activity.
+
 
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_events_tracker', github: '[your-github-handle]/spree_events_tracker', branch: 'X-X-stable'
+  gem 'solidus_events_tracker', github: 'vinsol/solidus_events_tracker'
   ```
-
-  The `branch` option is important: it must match the version of Spree you're using.
-  For example, use `3-1-stable` if you're using Spree `3-1-stable` or any `3.1.x` version.
 
 2. Install the gem using Bundler:
   ```ruby
@@ -20,7 +20,7 @@ Introduction goes here.
 
 3. Copy & run migrations
   ```ruby
-  bundle exec rails g spree_events_tracker:install
+  bundle exec rails g solidus_events_tracker:install
   ```
 
 4. Restart your server
