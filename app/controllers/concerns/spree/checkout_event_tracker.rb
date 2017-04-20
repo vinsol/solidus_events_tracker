@@ -22,7 +22,7 @@ module Spree
     end
 
     def checkout_state(request_path)
-      request_path.split('/').last
+      request_path.split('/').last.split('?').first
     end
   end
 end
