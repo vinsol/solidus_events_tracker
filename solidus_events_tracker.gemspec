@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'solidus_events_tracker'
-  s.version     = '2.1.0'
+  s.version     = '2.1.1'
   s.summary     = 'Tracks user activity for reporting.'
   s.description = 'Tracks user activity and events on the server side. Use Solidus Admin Insights to build reports of user activity.'
   s.required_ruby_version = '>= 2.1.0'
@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage  = 'http://vinsol.com'
   s.license = 'BSD-3'
 
-  # s.files       = `git ls-files`.split("\n")
+  s.files       = `git ls-files`.split("\n")
   # s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
