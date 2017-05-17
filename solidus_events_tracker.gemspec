@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'solidus_events_tracker'
   s.version     = '2.1.0'
-  s.summary     = 'Add gem summary here'
-  s.description = 'Add (optional) gem description here'
+  s.summary     = 'Tracks user activity for reporting.'
+  s.description = 'Tracks user activity and events on the server side. Use Solidus Admin Insights to build reports of user activity.'
   s.required_ruby_version = '>= 2.1.0'
 
-  s.author    = 'You'
-  s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.author    = ["Nimish Mehta", "Tanmay Sinha", "+ Vinsol Team"]
+  s.email     = 'info@vinsol.com'
+  s.homepage  = 'http://vinsol.com'
   s.license = 'BSD-3'
 
   # s.files       = `git ls-files`.split("\n")

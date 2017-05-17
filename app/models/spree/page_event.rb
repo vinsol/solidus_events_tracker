@@ -7,5 +7,8 @@ module Spree
 
     validates :activity,
               :session_id, presence: true
+
+    scope :viewed, -> { where(activity: :view) }
+    scope :product, -> { where(target_type: 'Spree::Product') }
   end
 end

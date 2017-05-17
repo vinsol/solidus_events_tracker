@@ -10,7 +10,7 @@ Tracks user activity and events on the server side. Use Solidus Admin Insights t
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'solidus_events_tracker', github: 'vinsol/solidus_events_tracker'
+  gem 'solidus_events_tracker'
   ```
 
 2. Install the gem using Bundler:
@@ -49,4 +49,4 @@ Credits
 
 [![vinsol.com: Ruby on Rails, iOS and Android developers](http://vinsol.com/vin_logo.png "Ruby on Rails, iOS and Android developers")](http://vinsol.com)
 
-Copyright (c) 2016 [vinsol.com](http://vinsol.com "Ruby on Rails, iOS and Android developers"), released under the New MIT License
+Copyright (c) 2017 [vinsol.com](http://vinsol.com "Ruby on Rails, iOS and Android developers"), released under the New MIT License
